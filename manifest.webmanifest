@@ -1,0 +1,9 @@
+{
+  "name": "NAJIHA AUTO EXPORT AGENT v4.0",
+  "short_name": "NAJIHA Agent",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f6f4",
+  "theme_color": "#10251f",
+  "description": "Approval-first export buyer workflow"
+}

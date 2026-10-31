@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#10251f"><title>NAJIHA AUTO EXPORT AGENT v4.0</title>
+<link rel="manifest" href="manifest.webmanifest">
+<style>
+:root{--bg:#f3f6f4;--ink:#17231f;--muted:#68766f;--green:#145c43;--line:#dce5df;--card:#fff;--gold:#d9ad53}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px system-ui,-apple-system,Segoe UI,sans-serif}
+header{background:linear-gradient(120deg,#10251f,#1b5a43);color:#fff;padding:24px 18px 20px}
+header .tag{font-size:12px;letter-spacing:.12em;color:#d9c58f;font-weight:700}h1{font-size:25px;margin:7px 0}header p{color:#d7e4dc;margin:4px 0;max-width:720px}
+main{max-width:1100px;margin:auto;padding:16px}.notice{background:#fff8e8;border:1px solid #eed9a7;padding:12px 14px;border-radius:12px;margin:12px 0;color:#654c1c}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:16px;margin:12px 0;box-shadow:0 2px 10px #183b2510}
+h2{font-size:18px;margin:0 0 12px}h3{font-size:15px;margin:0 0 8px}.muted{color:var(--muted);font-size:13px}.metric{font-size:27px;font-weight:750;color:var(--green)}
+label{display:block;font-size:13px;font-weight:650;margin:10px 0 5px}input,select,textarea{width:100%;padding:11px;border:1px solid #cbd8d0;border-radius:9px;background:#fff;font:inherit;color:var(--ink)}
+textarea{min-height:110px;resize:vertical}button,.btn{border:0;border-radius:9px;padding:11px 14px;background:var(--green);color:#fff;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;margin:5px 5px 5px 0}
+button.secondary,.btn.secondary{background:#e7eee9;color:#234536}button.gold{background:#9b7021}button.danger{background:#9b3434}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.tabs{display:flex;gap:6px;overflow:auto;margin:14px 0}.tabs button{white-space:nowrap;background:#dfe9e2;color:#254536}.tabs button.active{background:#145c43;color:#fff}
+.panel{display:none}.panel.active{display:block}.pill{display:inline-block;background:#e7f1ea;color:#24533c;padding:4px 8px;border-radius:20px;font-size:12px;font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:9px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#f3f7f4;position:sticky;top:0}.tablewrap{overflow:auto;max-height:420px}
+small{color:var(--muted)}.check{display:flex;gap:8px;align-items:center}.check input{width:auto}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:25px}
+@media(max-width:600px){header{padding:20px 15px}h1{font-size:21px}main{padding:10px}.card{padding:13px}}
+</style></head>
+<body>
+<header><div class="tag">PT NAJIHA GLOBAL TRADE • EXPORT SALES WORKSPACE</div><h1>NAJIHA AUTO EXPORT AGENT v4.0</h1><p>Buyer discovery • qualification • lead scoring • approval-based outreach • follow-up tracker</p><div class="row" style="margin-top:12px"><span class="pill">MODE: APPROVAL</span><span class="pill">TARGET: 50 LEADS / HARI</span><span class="pill">2 PRODUK</span></div></header>
+<main>
+<div class="notice"><b>Penting — cara kerja yang jujur:</b> Aplikasi ini menyiapkan alur kerja semi-otomatis. Pencarian web dilakukan melalui tombol pencarian yang membuka kueri siap pakai; data buyer harus diperiksa dan dimasukkan/diimpor. Email tidak dikirim otomatis. Mode approval berarti Anda meninjau dan menyetujui setiap pesan sebelum mengirim melalui akun email/WhatsApp Anda. Untuk riset berjalan sendiri 50 lead/hari dan sinkronisasi cloud dibutuhkan backend serta koneksi layanan yang diotorisasi.</div>
+<div class="grid">
+<div class="card"><div class="muted">Target harian</div><div class="metric">50</div><small>calon buyer untuk diteliti</small></div>
+<div class="card"><div class="muted">Mode outreach</div><div class="metric" style="font-size:22px">Approval</div><small>review dahulu, kirim sendiri</small></div>
+<div class="card"><div class="muted">Produk fokus</div><div class="metric" style="font-size:22px">2 produk</div><small>Glucomannan 91.37% • Porang Flour</small></div>
+<div class="card"><div class="muted">Database tersimpan</div><div class="metric" id="count">0</div><small>tersimpan di perangkat/browser ini</small></div>
+</div>
+<nav class="tabs">
+<button class="active" data-tab="dashboard">Dashboard</button><button data-tab="finder">Buyer Finder</button><button data-tab="leads">Database Buyer</button><button data-tab="outreach">Outreach Approval</button><button data-tab="follow">Follow-up</button><button data-tab="settings">Pengaturan & Backup</button>
+</nav>
+<section id="dashboard" class="panel active">
+<div class="card"><h2>Rencana kerja harian — 50 calon buyer</h2><div class="grid">
+<div><h3>Glucomannan Powder 91.37%</h3><div class="metric">25 lead</div><small>Importir bahan pangan, food ingredient distributor, nutraceutical, supplement manufacturer, konjac ingredient buyer.</small></div>
+<div><h3>Porang Flour</h3><div class="metric">25 lead</div><small>Food ingredient importer, flour/starch distributor, noodle/food manufacturer, konjac processor.</small></div>
+</div><p class="muted">Angka 25 + 25 adalah target alokasi pencarian, bukan jaminan 50 buyer valid. Jangan tandai lead sebagai verified tanpa bukti.</p></div>
+<div class="card"><h2>Alur kerja</h2><ol><li>Buka Buyer Finder dan pilih produk serta negara.</li><li>Jalankan kueri pencarian; periksa situs resmi, produk, kontak publik, dan bukti aktivitas.</li><li>Masukkan lead ke database dengan status verifikasi yang tepat.</li><li>Buat draft outreach, periksa detail dan lampiran, lalu setujui/kirim sendiri.</li><li>Catat tanggal kirim dan jadwalkan follow-up.</li></ol></div>
+</section>
+<section id="finder" class="panel">
+<div class="card"><h2>Buyer Finder — Search Builder</h2><p class="muted">Pilih parameter untuk membuat pencarian terarah. Tombol membuka hasil pencarian di tab baru; hasilnya tidak otomatis di-scrape ke database.</p>
+<label>Produk</label><select id="product"><option>Glucomannan Powder 91.37%</option><option>Porang Flour</option></select>
+<label>Negara target</label><select id="country"><option>Vietnam</option><option>United States</option><option>India</option><option>Philippines</option><option>United Arab Emirates</option><option>Australia</option><option>Malaysia</option><option>Qatar</option><option>Italy</option><option>All target markets</option></select>
+<label>Jenis calon buyer</label><select id="buyerType"><option>importer OR distributor</option><option>food ingredient manufacturer</option><option>nutraceutical OR supplement manufacturer</option><option>food processing company</option><option>konjac OR shirataki manufacturer</option></select>
+<label>Target batch</label><select id="batch"><option value="10">10 lead</option><option value="25" selected>25 lead</option><option value="50">50 lead</option></select>
+<div class="row"><button onclick="searchWeb()">Cari di Web</button><button class="secondary" onclick="searchLinkedIn()">Cari profil perusahaan</button><button class="secondary" onclick="searchFacebook()">Cari Facebook</button></div>
+<label>Kueri pencarian yang dihasilkan</label><textarea id="queryPreview" readonly></textarea><button class="secondary" onclick="copyQuery()">Salin kueri</button>
+</div>
+<div class="card"><h3>Checklist verifikasi sebelum lead diterima</h3><div class="check"><input type="checkbox"> Situs/halaman resmi perusahaan ditemukan</div><div class="check"><input type="checkbox"> Ada bukti produk atau kategori bahan yang relevan</div><div class="check"><input type="checkbox"> Kontak berasal dari kanal publik resmi</div><div class="check"><input type="checkbox"> Bukti aktivitas bisnis/importasi tercatat</div><div class="check"><input type="checkbox"> Tidak duplikat dan negara sesuai</div><p class="muted">Status Verified hanya jika bukti memadai. Jika hanya ada nama perusahaan/direktori, gunakan status Unverified.</p></div>
+</section>
+<section id="leads" class="panel">
+<div class="card"><h2>Database Buyer</h2><div class="row"><button onclick="addLead()">+ Tambah lead</button><button class="secondary" onclick="exportCSV()">Export CSV</button><button class="secondary" onclick="document.getElementById('csvfile').click()">Import CSV</button><input id="csvfile" type="file" accept=".csv,text/csv" hidden onchange="importCSV(event)"></div>
+<div class="grid"><div><label>Filter produk</label><select id="filterProduct" onchange="render()"><option value="">Semua</option><option>Glucomannan Powder 91.37%</option><option>Porang Flour</option></select></div><div><label>Filter status</label><select id="filterStatus" onchange="render()"><option value="">Semua</option><option>New</option><option>Researching</option><option>Unverified</option><option>Verified</option><option>Contacted</option><option>Replied</option><option>Qualified</option><option>Not relevant</option></select></div></div>
+<div class="tablewrap"><table><thead><tr><th>Perusahaan / Negara</th><th>Produk / Kontak</th><th>Status / Skor</th><th>Aksi</th></tr></thead><tbody id="leadRows"></tbody></table></div></div>
+</section>
+<section id="outreach" class="panel">
+<div class="card"><h2>Outreach Approval Desk</h2><p class="muted">Draft dibuat untuk ditinjau. Tidak ada email yang dikirim dari aplikasi ini.</p>
+<label>Pilih lead</label><select id="outreachLead" onchange="makeDraft()"><option value="">-- pilih lead --</option></select>
+<label>Jenis pesan</label><select id="messageType" onchange="makeDraft()"><option value="email">Email perkenalan</option><option value="whatsapp">WhatsApp singkat</option><option value="follow">Follow-up</option></select>
+<label>Subjek email</label><input id="subject" value="Indonesian Glucomannan Powder 91.37% / Porang Flour – Supply Inquiry">
+<label>Draft pesan</label><textarea id="draft"></textarea>
+<div class="row"><button onclick="makeDraft()">Buat draft</button><button class="secondary" onclick="copyDraft()">Salin draft</button><button class="gold" onclick="approveDraft()">Tandai disetujui</button><button class="secondary" onclick="openEmail()">Buka aplikasi email</button><button class="secondary" onclick="openWhatsApp()">Buka WhatsApp</button></div><p id="approvalState" class="muted">Belum disetujui.</p>
+</div>
+<div class="card"><h3>Informasi komersial yang digunakan dalam draft</h3><p><b>Glucomannan Powder 91.37%</b>: harga indikatif USD 17,149/MT; MOQ 1 MT. Payment: 50% T/T before production, 50% T/T before container loading.</p><p><b>Porang Flour</b>: jangan cantumkan harga/spesifikasi sebelum data final supplier dikonfirmasi.</p><p class="muted">Selalu cocokkan COA, specification sheet, kapasitas, kemasan, Incoterm, masa berlaku harga, dan ketersediaan sebelum mengirim penawaran final.</p></div>
+</section>
+<section id="follow" class="panel">
+<div class="card"><h2>Follow-up Tracker</h2><p class="muted">Pilih lead di Database, ubah status ke Contacted/Replied, dan isi catatan tanggal tindak lanjut.</p>
+<label>Lead</label><select id="followLead"></select><label>Catatan follow-up</label><textarea id="followNote" placeholder="Contoh: Email dikirim 1 Nov 2026; follow-up pertama 5 Nov 2026."></textarea><button onclick="saveFollow()">Simpan catatan</button><div id="followList"></div></div>
+</section>
+<section id="settings" class="panel">
+<div class="card"><h2>Profil perusahaan & pengaturan</h2>
+<label>Nama perusahaan</label><input id="company" value="PT NAJIHA GLOBAL TRADE">
+<label>Email</label><input id="email" value="najihaglobaltrade@gmail.com">
+<label>WhatsApp (format internasional)</label><input id="phone" value="+6287867095163">
+<label>Target pencarian per hari</label><input id="dailyTarget" type="number" value="50">
+<label class="check"><input id="approvalMode" type="checkbox" checked disabled> Mode approval aktif (wajib review manual)</label>
+<button onclick="saveSettings()">Simpan pengaturan</button><button class="secondary" onclick="backup()">Backup data JSON</button><button class="secondary" onclick="document.getElementById('backupfile').click()">Pulihkan backup JSON</button><input id="backupfile" type="file" accept=".json" hidden onchange="restore(event)">
+<button class="danger" onclick="clearData()">Hapus semua data lokal</button><p class="muted">Data disimpan di localStorage browser pada perangkat ini. Hapus data browser dapat menghilangkan database. Lakukan backup berkala.</p>
+</div>
+<div class="card"><h3>Catatan integrasi v4.0</h3><ul><li>Untuk otomatisasi riset 50 lead/hari diperlukan backend terjadwal dan sumber data/API yang sah.</li><li>Untuk pengiriman email dibutuhkan koneksi akun email yang diotorisasi. Versi ini sengaja tidak mengirim tanpa persetujuan.</li><li>WhatsApp dibuka sebagai aplikasi untuk pengiriman manual; tidak ada blast otomatis.</li><li>Jangan mengirim pesan massal yang tidak relevan. Personalisasi dan patuhi aturan anti-spam negara tujuan.</li></ul></div>
+</section>
+</main><footer>NAJIHA AUTO EXPORT AGENT v4.0 • Approval-first • Data lokal pada perangkat</footer>
+<script>
+const KEY='najiha_auto_export_v4';
+let db=JSON.parse(localStorage.getItem(KEY)||'{"leads":[],"settings":{},"approved":{},"notes":[]}');
+const $=id=>document.getElementById(id);
+function persist(){localStorage.setItem(KEY,JSON.stringify(db));render()}
+function esc(s){return String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tabs button').forEach(x=>x.classList.remove('active'));document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');$(b.dataset.tab).classList.add('active');render()});
+function query(){let p=$('product').value,c=$('country').value,t=$('buyerType').value;let core=p.includes('Glucomannan')?'"glucomannan" OR "konjac glucomannan"':'"porang flour" OR "konjac flour" OR "Amorphophallus muelleri"';return `${core} (${t}) ${c==='All target markets'?'':c} company contact importer` .trim()}
+function updateQuery(){$('queryPreview').value=query()}
+['product','country','buyerType','batch'].forEach(id=>$(id).addEventListener('change',updateQuery));updateQuery();
+function searchWeb(){window.open('https://www.google.com/search?q='+encodeURIComponent(query()),'_blank')}
+function searchLinkedIn(){window.open('https://www.google.com/search?q='+encodeURIComponent(query()+' site:linkedin.com/company'),'_blank')}
+function searchFacebook(){window.open('https://www.google.com/search?q='+encodeURIComponent(query()+' site:facebook.com'),'_blank')}
+function copyQuery(){navigator.clipboard?.writeText(query());alert('Kueri disalin jika izin clipboard tersedia.')}
+function addLead(prefill={}){let name=prompt('Nama perusahaan:');if(!name)return;let country=prompt('Negara:','');let product=$('product').value;let website=prompt('Website resmi (opsional):','');let contact=prompt('Email/kontak publik (opsional):','');let evidence=prompt('Bukti/sumber (URL atau catatan):','');db.leads.push({id:Date.now(),name,country,product,website,contact,evidence,status:'New',score:score({name,country,website,contact,evidence}),notes:'',created:new Date().toISOString()});persist()}
+function score(x){return (x.website?25:0)+(x.contact?25:0)+(x.evidence?30:0)+(x.country?10:0)+(x.name?10:0)}
+function render(){ $('count').textContent=db.leads.length;let fp=$('filterProduct')?.value||'',fs=$('filterStatus')?.value||'';let rows=db.leads.filter(x=>(!fp||x.product===fp)&&(!fs||x.status===fs));$('leadRows').innerHTML=rows.map(x=>`<tr><td><b>${esc(x.name)}</b><br>${esc(x.country)}<br><small>${esc(x.website)}</small></td><td>${esc(x.product)}<br>${esc(x.contact)}<br><small>${esc(x.evidence)}</small></td><td><select onchange="changeStatus(${x.id},this.value)">${['New','Researching','Unverified','Verified','Contacted','Replied','Qualified','Not relevant'].map(s=>`<option ${x.status===s?'selected':''}>${s}</option>`).join('')}</select><br><b>${x.score}/100</b></td><td><button class="secondary" onclick="selectLead(${x.id})">Draft</button><button class="danger" onclick="delLead(${x.id})">Hapus</button></td></tr>`).join('');let opts=db.leads.map(x=>`<option value="${x.id}">${esc(x.name)} — ${esc(x.country)}</option>`).join('');$('outreachLead').innerHTML='<option value="">-- pilih lead --</option>'+opts;$('followLead').innerHTML=opts;$('followList').innerHTML=db.notes.slice().reverse().map(n=>`<p><b>${esc(n.name)}</b> — ${esc(n.date)}<br>${esc(n.note)}</p>`).join('')}
+function changeStatus(id,s){let x=db.leads.find(x=>x.id===id);if(x)x.status=s;persist()}
+function delLead(id){if(confirm('Hapus lead ini?')){db.leads=db.leads.filter(x=>x.id!==id);persist()}}
+function selectLead(id){document.querySelector('[data-tab="outreach"]').click();$('outreachLead').value=id;makeDraft()}
+function lead(){return db.leads.find(x=>x.id==$('outreachLead').value)}
+function makeDraft(){let x=lead();if(!x){$('draft').value='';return}let prod=x.product,price=prod.includes('Glucomannan')?'Our indicative offer is USD 17,149/MT, MOQ 1 MT. Payment terms: 50% T/T before production and 50% T/T before container loading.': 'We can share the Porang Flour specification, COA, packing details and quotation after confirming your required grade and application.';let intro=`Dear ${x.name} Team,\n\nGreetings from PT NAJIHA GLOBAL TRADE, Indonesia.\n\nWe are exploring supply cooperation for ${prod}. ${price}\n\nCould you please let us know whether your company currently imports or uses this ingredient? If relevant, we would be pleased to share our product specification and supporting documents.\n\nBest regards,\nPT NAJIHA GLOBAL TRADE\nEmail: ${$('email').value}\nWhatsApp: ${$('phone').value}`;let type=$('messageType').value;$('draft').value=type==='whatsapp'?`Hello ${x.name} team, we are PT NAJIHA GLOBAL TRADE from Indonesia. We supply ${prod}. May I know the right person to contact for ingredient sourcing? I can share our specification and details. Thank you.`:type==='follow'?`Dear ${x.name} Team,\n\nI hope you are well. I am following up on our previous message regarding ${prod}. Please let us know if this ingredient is relevant to your current sourcing needs.\n\nBest regards,\nPT NAJIHA GLOBAL TRADE`:intro;$('subject').value=`Supply inquiry: ${prod} from Indonesia`; $('approvalState').textContent='Draft siap ditinjau. Belum disetujui.'}
+function copyDraft(){navigator.clipboard?.writeText($('draft').value);alert('Draft disalin jika izin clipboard tersedia.')}
+function approveDraft(){let x=lead();if(!x){alert('Pilih lead terlebih dahulu.');return}db.approved[x.id]={at:new Date().toISOString(),subject:$('subject').value,draft:$('draft').value};$('approvalState').textContent='Disetujui untuk lead ini pada '+new Date().toLocaleString()+' — Anda tetap mengirim secara manual.';persist()}
+function openEmail(){let x=lead();if(!x){alert('Pilih lead.');return}let to=x.contact&&x.contact.includes('@')?x.contact:'';let url='mailto:'+encodeURIComponent(to)+'?subject='+encodeURIComponent($('subject').value)+'&body='+encodeURIComponent($('draft').value);location.href=url}
+function openWhatsApp(){let x=lead();if(!x){alert('Pilih lead.');return}let phone=x.contact.replace(/\D/g,'');window.open('https://wa.me/'+phone+'?text='+encodeURIComponent($('draft').value),'_blank')}
+function saveFollow(){let x=db.leads.find(x=>x.id==$('followLead').value);if(!x)return;let note=$('followNote').value;if(!note.trim())return alert('Isi catatan.');db.notes.push({id:Date.now(),name:x.name,date:new Date().toLocaleDateString(),note});x.notes=note;persist();$('followNote').value=''}
+function saveSettings(){db.settings={company:$('company').value,email:$('email').value,phone:$('phone').value,target:$('dailyTarget').value};persist();alert('Pengaturan disimpan.')}
+function backup(){let blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='NAJIHA_AUTO_EXPORT_BACKUP.json';a.click();URL.revokeObjectURL(a.href)}
+function restore(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{db=JSON.parse(r.result);persist();alert('Backup dipulihkan.')}catch(_){alert('File backup tidak valid.')}};r.readAsText(f)}
+function clearData(){if(confirm('Yakin menghapus semua database dan catatan lokal?')){db={leads:[],settings:{},approved:{},notes:[]};persist()}}
+function csvCell(v){return '"'+String(v??'').replace(/"/g,'""')+'"'}
+function exportCSV(){let cols=['name','country','product','website','contact','evidence','status','score','notes'];let csv=[cols.join(','),...db.leads.map(x=>cols.map(k=>csvCell(x[k])).join(','))].join('\r\n');let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='NAJIHA_BUYER_DATABASE.csv';a.click()}
+function importCSV(e){let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{let lines=r.result.split(/\r?\n/).filter(Boolean);let headers=lines.shift().split(',').map(x=>x.replace(/^"|"$/g,''));for(let line of lines){let vals=line.match(/("(?:[^"]|"")*"|[^,]*)(,|$)/g)||[];let arr=vals.map(v=>v.replace(/,$/,'').replace(/^"|"$/g,'').replace(/""/g,'"'));let obj={};headers.forEach((h,i)=>obj[h]=arr[i]||'');if(obj.name)db.leads.push({...obj,id:Date.now()+Math.random(),score:Number(obj.score)||0,status:obj.status||'Unverified'})}persist();alert('Import selesai. Periksa kembali hasilnya.');};r.readAsText(f)}
+render();
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script></body></html>
